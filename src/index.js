@@ -4,8 +4,8 @@ import { findDOMNode } from 'react-dom';
 import throttle from 'lodash.throttle';
 import raf from 'raf';
 import getDisplayName from 'react-display-name';
-import { DndContext } from 'react-dnd';
 import hoist from 'hoist-non-react-statics';
+import { DndContext } from '@aha-app/react-dnd-backend';
 import { noop, intBetween, getCoords } from './util';
 
 const DEFAULT_BUFFER = 150;
@@ -256,15 +256,14 @@ export function createScrollingComponent(WrappedComponent) {
   return hoist(ScrollingComponent, WrappedComponent);
 }
 
-export default function createScrollingComponentWithConsumer(WrappedComponent) {
+export default function createScrollingComponentWithManager(WrappedComponent) {
   const ScrollingComponent = createScrollingComponent(WrappedComponent);
+
+  const { dragDropManager } = DndContext;
+
   return forwardRef((props, ref) => (
-    <DndContext.Consumer>
-      {({ dragDropManager }) => (
-        dragDropManager === undefined
-          ? null
-          : <ScrollingComponent {...props} ref={ref} dragDropManager={dragDropManager} />
-      )}
-    </DndContext.Consumer>
+    dragDropManager === undefined
+      ? null
+      : <ScrollingComponent {...props} ref={ref} dragDropManager={dragDropManager} />
   ));
 }
