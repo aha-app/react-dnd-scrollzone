@@ -1,6 +1,6 @@
 {
-  "name": "@zenhubhq/react-dnd-scrollzone",
-  "version": "5.0.1",
+  "name": "@aha-app/react-dnd-scrollzone",
+  "version": "5.0.2",
   "description": "A cross browser solution to scrolling during drag and drop.",
   "main": "lib/index.js",
   "scripts": {
@@ -42,9 +42,11 @@
     "lodash.throttle": "^4.0.1",
     "prop-types": "^15.5.9",
     "raf": "^3.2.0",
-    "react-display-name": "^0.2.0"
+    "react-display-name": "^0.2.0",
+    "@aha-app/react-dnd-backend": "1.1.0"
   },
   "devDependencies": {
+    "@aha-app/react-dnd-backend": "1.1.0",
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -61,14 +63,15 @@
     "in-publish": "^2.0.0",
     "mocha": "^5.2.0",
     "react": "^16.8.6",
-    "react-dnd": "^8.0.3",
-    "react-dom": "^16.8.6",
+    "react-dnd": "^10.0.2",
+    "react-dom": "^16.8.4",
     "sinon": "^7.1.1",
     "sinon-chai": "^3.2.0"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dnd": "^8.0.3",
-    "react-dom": "^16.8.6"
+    "react": "^16.8.4",
+    "react-dnd": "^10.0.2",
+    "react-dom": "^16.8.4",
+    "@aha-app/react-dnd-backend": "1.1.0"
   }
 }
