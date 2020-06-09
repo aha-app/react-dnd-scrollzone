@@ -1,6 +1,6 @@
 {
   "name": "@aha-app/react-dnd-scrollzone",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "A cross browser solution to scrolling during drag and drop.",
   "main": "lib/index.js",
   "scripts": {
