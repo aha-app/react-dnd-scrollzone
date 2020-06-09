@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aha-app/react-dnd-backend@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@aha-app/react-dnd-backend/-/react-dnd-backend-1.1.0.tgz#c834d69f61872dca94ae327be584d08f5ee7d835"
-  integrity sha512-X+c0xukrq63/y7phalMVqDlJhR55CBSmEG8wAJ9uJk/F7u053lr3Nx6D4FgTM4CgMndILz5RsmON/w2/oIZUSQ==
+"@aha-app/react-dnd-backend@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@aha-app/react-dnd-backend/-/react-dnd-backend-1.2.0.tgz#c348f55df512f456e6f6925f4f91ddefed1a480d"
+  integrity sha512-SG07Wcrqd8b1581IwJb6aNRT0P0m9wiqibhFX2Wcvh28WrzgQAlVd87kSkokAYtJVXLA5P1lW+QGMDo9EMseLg==
 
 "@babel/cli@^7.0.0":
   version "7.2.0"
